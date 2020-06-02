@@ -4,8 +4,10 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, Hexi">
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex">
+    <meta name="keywords" content="工作中遇到的问题(第四弹), Hexi">
+    <meta name="description" content="记5.22号工作中遇到的问题集合迭代器使用报错
+报错：Exception in thread “main” java.util.ConcurrentModificationException  
+问题：代码如下：while(iterator">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -14,7 +16,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 	<meta name="baidu-site-verification" content="GK8E8w3tFS">
-    <title>Hello World | Hexi</title>
+    <title>工作中遇到的问题(第四弹) | Hexi</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -241,13 +243,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        Hello World
+                        工作中遇到的问题(第四弹)
                     </div>
                 </div>
             </div>
@@ -357,9 +359,13 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">No tag</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/work/">
+                                <span class="chip bg-color">work</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -371,7 +377,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2020-06-02
+                    2020-05-22
                 </div>
                 
 
@@ -380,7 +386,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    73
+                    362
                 </div>
                 
 
@@ -403,19 +409,29 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+                <h2 id="记5-22号工作中遇到的问题"><a href="#记5-22号工作中遇到的问题" class="headerlink" title="记5.22号工作中遇到的问题"></a>记5.22号工作中遇到的问题</h2><h3 id="集合迭代器使用报错"><a href="#集合迭代器使用报错" class="headerlink" title="集合迭代器使用报错"></a>集合迭代器使用报错</h3><ul>
+<li>报错：Exception in thread “main” java.util.ConcurrentModificationException  </li>
+<li>问题：代码如下：<br>while(iterator.hasNext()){<pre><code>    Integer key = iterator.next();
+    if(key.equals(k)){
+        map.remove(key);
+    }
+}</code></pre>  }<br>  使用了迭代器遍历，但是在删除时，调用了map的删除方法，我忘记了一点：map在进行遍历操作的时候，是不能做修改操作的，如果做了，就会报错  </li>
+<li>解决方法：调用迭代器的删除方法，代码如下：<br>  while(iterator.hasNext()){<pre><code>    Integer key = iterator.next();
+    if(key.equals(k)){
+        iterator.remove(); //注意这里的不同
+    }
+}</code></pre>  }  </li>
+</ul>
+<h3 id="注解报错"><a href="#注解报错" class="headerlink" title="注解报错"></a>注解报错</h3><ul>
+<li>报错：Unable to close ApplicationContext；org.springframework.beans.factory.BeanCreationException: Error creating bean with name ‘org.springframework.boot.autoconfigure.admin.SpringApplicationAdminJmxAutoConfiguration’  </li>
+<li>问题：Mapper层没有添加@Mapper注解，以为一个简单的@Repository就可以了  </li>
+<li>原因：@Mapper是Mybatis的注解，是用来说明这个是一个Mapper，对应的xxxMapper.xml就是来实现这个Mapper,如果是改成了@repository，使用的是Spring的Bean注解，当然是不可以的</li>
+<li>解决方法：在类前面添加@Mapper注解  </li>
+</ul>
+<h3 id="导入SSL证书到JDK里"><a href="#导入SSL证书到JDK里" class="headerlink" title="导入SSL证书到JDK里"></a>导入SSL证书到JDK里</h3><ul>
+<li>以阿里云镜像库举例子：  </li>
+</ul>
+<p>1.首先去下载证书到本地<br>2.cmd 输入：keytool -import -alias xxx -keystore <JAVA_HOME>/jre/lib/security/cacerts -file xxx.cer<br>3.如果有确认提示，y就好了，很多人做完上面第一步就好了<br>4.如果还未好：将下面的内容加入sts.ini 或者是 eclipse.ini 中<br>-Djavax.net.ssl.trustStore=<JAVA_HOME>\jre\lib\security\cacerts -Djava.net.ssl.trustStorePassword=changeit</p>
 
             </div>
             <hr/>
@@ -441,7 +457,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://yoursite.com/2020/06/02/hello-world/">http://yoursite.com/2020/06/02/hello-world/</a>
+                    <a href="http://yoursite.com/2020/05/22/%E5%B7%A5%E4%BD%9C%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98-%E7%AC%AC%E5%9B%9B%E5%BC%B9/">http://yoursite.com/2020/05/22/%E5%B7%A5%E4%BD%9C%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98-%E7%AC%AC%E5%9B%9B%E5%BC%B9/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -478,7 +494,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">No tag</span>
+                            
+                                <a href="/tags/work/">
+                                    <span class="chip bg-color">work</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -668,23 +688,19 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2020/06/02/Eng/">
+                <a href="/2020/06/02/hello-world/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="Eng">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
                         
-                        <span class="card-title">Eng</span>
+                        <span class="card-title">Hello World</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            记集
-报错：Exceptio
-问题：代码如下：while(iterator.hasNext()){    Integer key = iterator.next();
-    if(key.equals(k)){
-        map.r
+                            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
                         
                     </div>
                     <div class="publish-info">
@@ -706,7 +722,7 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                Next&nbsp;<i class="fas fa-chevron-right"></i>
+                Current&nbsp;<i class="far fa-dot-circle"></i>
             </div>
             <div class="card">
                 <a href="/2020/05/22/%E5%B7%A5%E4%BD%9C%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98-%E7%AC%AC%E5%9B%9B%E5%BC%B9/">
@@ -738,6 +754,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
